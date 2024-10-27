@@ -156,6 +156,18 @@ body {
 
 }
 
+.inf1:nth-child(1) .title {
+  background-image: url('img/image1.png'); /* 첫 번째 타이틀 이미지 */
+}
+
+.inf1:nth-child(2) .title {
+  background-image: url('img/image2.png'); /* 두 번째 타이틀 이미지 */
+}
+
+.inf1:nth-child(3) .title {
+  background-image: url('img/image3.png'); /* 세 번째 타이틀 이미지 */
+}
+
 .title {
   height: 200px;
   background-color: #7FDAE1;
@@ -168,10 +180,14 @@ body {
 }
 
 .title h1 {
+  position: relative;
+  z-index: 1;
   margin: 0;
   font-size: 40px;
-  color : white;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 그림자 추가 */
 }
+
 
 .detail {
   font-weight: bold;
