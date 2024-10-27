@@ -9,18 +9,18 @@ body {
   background-color: #338FA3;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
 
 .Nav_Logo {
-  margin-left: 200px; 
+  margin-left: 200px;
   color: white;
   font-size: 22px;
   font-weight: 600;
 }
 
 .Nav ul {
-  display: flex; 
+  display: flex;
   margin: 0;
   padding: 0;
   margin-right: 140px;
@@ -28,7 +28,7 @@ body {
 
 .Nav li {
   list-style-type: none;
-  margin-right: 60px; 
+  margin-right: 60px;
 }
 
 .Nav li a {
@@ -83,8 +83,8 @@ body {
   border: 3px solid #0F9BAE;
   box-shadow: 0px 4px 10px 2px rgb(0, 0, 0,0.25);
   display: block;
-  margin-left: auto; 
-  margin-right: auto; 
+  margin-left: auto;
+  margin-right: auto;
   /* margin R,L auto는 버튼 중앙정렬입니다 */
 }
 
@@ -153,12 +153,24 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   box-sizing: border-box;
-  
+
+}
+
+.inf1:nth-child(1) .title {
+  background-image: url('img/image1.png'); /* 첫 번째 타이틀 이미지 */
+}
+
+.inf1:nth-child(2) .title {
+  background-image: url('img/image2.png'); /* 두 번째 타이틀 이미지 */
+}
+
+.inf1:nth-child(3) .title {
+  background-image: url('img/image3.png'); /* 세 번째 타이틀 이미지 */
 }
 
 .title {
   height: 200px;
-  background-color: #F2F2F2;
+  background-color: #7FDAE1;
   border-radius: 20px 20px 0 0;
   display: flex;
   align-items: end;
@@ -168,11 +180,17 @@ body {
 }
 
 .title h1 {
+  position: relative;
+  z-index: 1;
   margin: 0;
   font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 그림자 추가 */
 }
 
+
 .detail {
+  font-weight: bold;
   height: 200px;
   padding: 20px; /* 텍스트 주변 여백 추가 */
   padding-top: 5px;
@@ -204,6 +222,65 @@ body {
   width: 1037.1px;
   height: 600px;
 }
+
+/* 흡연 구역 list 시작 */
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center; /* 수직 중앙 정렬 */
+  margin-bottom: 40px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.feature-item:first-child {
+  margin-left: 20px;
+}
+
+.feature-item:last-child {
+  border-bottom: 1px solid #000;
+}
+
+.feature-item .N_Block {
+  font-size: 112px;
+  font-weight: bold;
+  color: #46A8AD;
+  margin-right: 30px; /* 번호와 텍스트 사이의 여백 */
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.feature-item .D_Block {
+  text-align: left;
+}
+
+.feature-item .D_Block:first-child {
+  margin-left: 30px;
+}
+
+.feature-item h2 {
+  font-size: 28px;
+  margin: 0;
+  color: #3FAFBE;
+}
+
+.feature-item p {
+  font-size: 17px;
+  margin-top: 10px; /* 제목과 본문 사이의 여백 */
+  color: #000000;
+}
+
+
+
 
 
 .footer_gradient {
