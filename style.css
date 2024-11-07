@@ -1,31 +1,57 @@
 /* Regular (기본 두께) */
+
+/* Light */
 @font-face {
-  font-family: 'RedHatDisplay';
-  src: url('./fonts/RedHatDisplay-Regular.otf') format('opentype');
+  font-family: 'Red Hat Display';
+  src: url('./fonts/RedHatDisplay-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url('/fonts/RedHatDisplay-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 /* Medium */
 @font-face {
-  font-family: 'RedHatDisplay';
-  src: url('./fonts/RedHatDisplay-Medium.otf') format('opentype');
+  font-family: 'Red Hat Display';
+  src: url('/fonts/RedHatDisplay-Medium.ttf') format('truetype');
   font-weight: 500;
+  font-style: normal;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url('/fonts/RedHatDisplay-SemiBold.ttf') format('truetype');
+  font-weight: 600;
   font-style: normal;
 }
 
 /* Bold */
 @font-face {
-  font-family: 'RedHatDisplay';
-  src: url('./fonts/RedHatDisplay-Bold.otf') format('opentype');
+  font-family: 'Red Hat Display';
+  src: url('./fonts/RedHatDisplay-Bold.ttf') format('truetype');
   font-weight: 700;
+  font-style: normal;
+}
+
+/* Extra Bold */
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url('./fonts/RedHatDisplay-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
   font-style: normal;
 }
 
 /* Black */
 @font-face {
-  font-family: 'RedHatDisplay';
-  src: url('./fonts/RedHatDisplay-Black.otf') format('opentype');
+  font-family: 'Red Hat Display';
+  src: url('/fonts/RedHatDisplay-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
