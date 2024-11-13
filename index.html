@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=1024">
   <title>안양시 흡연 및 금연구역 시각화</title>
   <link rel="stylesheet" href="style.css">
 <!-- 브랜치생성 커밋 테스트-->
@@ -42,6 +42,17 @@
       targetSection.scrollIntoView({ behavior: 'smooth' });
     }
   }
+  function adjustH2Text() {
+    const h2Element = document.querySelector(".Section_Project h2");
+    if (window.innerWidth <= 800) {
+      h2Element.innerHTML = "CleanBreath가 소개하는 <br>공기 청정구역 프로젝트";
+    } else {
+      h2Element.innerHTML = "CleanBreath가 소개하는 공기 청정구역 프로젝트";
+    }
+  }
+
+  window.addEventListener("resize", adjustH2Text);
+  window.addEventListener("load", adjustH2Text);
 </script>
 
 <body>
@@ -70,6 +81,7 @@
 
 <div class="Section_Project">
   <h2>CleanBreath가 소개하는 공기 청정구역 프로젝트</h2>
+  <!-- <h2>CleanBreath가 소개하는 <br>공기 청정구역 프로젝트</h2> -->
 
   <div class="Project_Cards">
     <!-- 첫 번째 카드 -->
